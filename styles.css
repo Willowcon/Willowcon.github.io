@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    max-width: 680px;
+    max-width: 780px;
     margin: 0 auto;
     padding: 40px 24px 80px;
 }
@@ -49,38 +49,58 @@ nav .site-name {
     margin-bottom: 64px;
 }
 
-.hero-content {
+.hero-layout {
     display: flex;
-    align-items: center;
-    gap: 32px;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.hero-left {
+    flex-shrink: 0;
+    text-align: center;
 }
 
 .hero-photo {
-    width: 140px;
-    height: 140px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center top;
-    flex-shrink: 0;
+    display: block;
+    margin-bottom: 16px;
 }
 
-.hero-text h1 {
-    font-size: 2.5rem;
+.hero-left h1 {
+    font-size: 1.6rem;
     font-weight: 700;
     color: #111;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
-.hero-text .title {
-    font-size: 1.15rem;
+.hero-left .title {
+    font-size: 1rem;
     color: #555;
     font-weight: 500;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
-.hero-text .location {
-    font-size: 1rem;
+.hero-left .location {
+    font-size: 0.9rem;
     color: #888;
+}
+
+.hero-about h2 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #999;
+    margin-bottom: 16px;
+}
+
+.hero-about p {
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.8;
 }
 
 /* Sections */
