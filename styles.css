@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #333;
+    background-color: #fafafa;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 24px;
+    padding: 24px 0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+}
+
+nav a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #111;
+}
+
+nav .site-name {
+    font-weight: 700;
+    color: #111;
+    margin-right: auto;
+}
+
+/* Hero */
+.hero {
+    margin-bottom: 64px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.hero .title {
+    font-size: 1.15rem;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.hero .location {
+    font-size: 1rem;
+    color: #888;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 48px;
+}
+
+.section h2 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #999;
+    margin-bottom: 16px;
+}
+
+.section p {
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.8;
+}
+
+/* Accomplishments */
+.accomplishment-item {
+    margin-bottom: 28px;
+    padding-left: 20px;
+    border-left: 3px solid #111;
+}
+
+.accomplishment-item .headline {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.accomplishment-item .detail {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+.accomplishment-item .company-tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+/* Experience */
+.experience-item {
+    margin-bottom: 24px;
+}
+
+.experience-item .role {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.experience-item .company {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.experience-item .dates {
+    font-size: 0.85rem;
+    color: #999;
+    margin-top: 2px;
+}
+
+/* Education */
+.education-item {
+    margin-bottom: 16px;
+}
+
+.education-item .school {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.education-item .degree {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Tags */
+.tags-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags-list li {
+    background: #f0f0f0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Contact */
+.contact-links {
+    display: flex;
+    gap: 24px;
+}
+
+.contact-links a {
+    color: #111;
+    text-decoration: none;
+    font-size: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2px;
+    transition: border-color 0.2s;
+}
+
+.contact-links a:hover {
+    border-color: #111;
+}
+
+/* Blog / Posts */
+.page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.page-subtitle {
+    font-size: 1.05rem;
+    color: #888;
+    margin-bottom: 48px;
+}
+
+.post-card {
+    padding: 32px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.post-card:first-child {
+    padding-top: 0;
+}
+
+.post-card .post-date {
+    font-size: 0.8rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.post-card .post-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.post-card .post-excerpt {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.post-card .read-more {
+    font-size: 0.9rem;
+    color: #111;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1px;
+    transition: border-color 0.2s;
+}
+
+.post-card .read-more:hover {
+    border-color: #111;
+}
+
+.coming-soon {
+    text-align: center;
+    padding: 60px 0;
+    color: #999;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 80px;
+    padding-top: 24px;
+    border-top: 1px solid #eee;
+    font-size: 0.85rem;
+    color: #bbb;
+}
