@@ -49,15 +49,11 @@ nav .site-name {
     margin-bottom: 64px;
 }
 
-.hero-layout {
+.hero-top {
     display: flex;
     gap: 40px;
-    align-items: flex-start;
-}
-
-.hero-left {
-    flex-shrink: 0;
-    text-align: center;
+    align-items: center;
+    margin-bottom: 24px;
 }
 
 .hero-photo {
@@ -66,27 +62,11 @@ nav .site-name {
     border-radius: 50%;
     object-fit: cover;
     object-position: center top;
-    display: block;
-    margin-bottom: 16px;
+    flex-shrink: 0;
 }
 
-.hero-left h1 {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #111;
-    margin-bottom: 4px;
-}
-
-.hero-left .title {
-    font-size: 1rem;
-    color: #555;
-    font-weight: 500;
-    margin-bottom: 4px;
-}
-
-.hero-left .location {
-    font-size: 0.9rem;
-    color: #888;
+.hero-about {
+    flex: 1;
 }
 
 .hero-about h2 {
@@ -94,13 +74,36 @@ nav .site-name {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: #999;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .hero-about p {
     font-size: 1.05rem;
     color: #444;
     line-height: 1.8;
+}
+
+.hero-info {
+    text-align: center;
+}
+
+.hero-info h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.hero-info .title {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.hero-info .location {
+    font-size: 0.95rem;
+    color: #888;
 }
 
 /* Sections */
