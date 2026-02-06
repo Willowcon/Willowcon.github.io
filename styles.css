@@ -49,21 +49,36 @@ nav .site-name {
     margin-bottom: 64px;
 }
 
-.hero h1 {
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.hero-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    flex-shrink: 0;
+}
+
+.hero-text h1 {
     font-size: 2.5rem;
     font-weight: 700;
     color: #111;
     margin-bottom: 8px;
 }
 
-.hero .title {
+.hero-text .title {
     font-size: 1.15rem;
     color: #555;
     font-weight: 500;
     margin-bottom: 6px;
 }
 
-.hero .location {
+.hero-text .location {
     font-size: 1rem;
     color: #888;
 }
