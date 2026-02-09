@@ -24,6 +24,7 @@ nav {
     padding: 24px 0;
     margin-bottom: 40px;
     border-bottom: 1px solid #eee;
+    align-items: center;
 }
 
 nav a {
@@ -42,6 +43,56 @@ nav .site-name {
     font-weight: 700;
     color: #111;
     margin-right: auto;
+}
+
+/* Dropdown Nav */
+.nav-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 8px 0;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(4px);
+    transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+    z-index: 100;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 20px;
+    color: #888;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s, background-color 0.2s;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    color: #111;
+    background-color: #f8f8f8;
+}
+
+.dropdown-menu a.active {
+    color: #111;
+    font-weight: 600;
 }
 
 /* Hero */
@@ -310,6 +361,41 @@ nav .site-name {
 .book-item .book-author {
     font-size: 0.9rem;
     color: #888;
+}
+
+/* Landing Cards (for professional.html hub page) */
+.landing-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 16px;
+}
+
+.landing-card {
+    display: block;
+    padding: 28px 24px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.landing-card:hover {
+    border-color: #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.landing-card h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 6px;
+}
+
+.landing-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
 }
 
 .coming-soon {
